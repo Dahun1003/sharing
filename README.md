@@ -1,9 +1,8 @@
 #include <stdio.h>
+
 int main() {
-	int a;
+	int a, i, j, m = 1000000, n = -1000000;
 	scanf("%d", &a);
-    
-	int i, j, m, n;
 	
 	for (i = 0; i < a; ++i) {
 		scanf("%d", &j);
