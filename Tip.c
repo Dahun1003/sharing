@@ -54,16 +54,16 @@ int quick(const void* ex1, const void* ex2){
 int main(void)
 {
     int a, i;
-    long total = 0;
-    long* arr;
+    long long total = 0;
+    long long* arr;
     scanf("%d", &a);
-    arr = (long*)malloc(sizeof(long) * a);
+    arr = (long long*)malloc(sizeof(long long) * a);
     
 	for (i = 0; i < a; i++){
-    scanf("%d", &arr[i]);
+    scanf("%lld", &arr[i]);
 	}
 	
-	qsort(arr, a, sizeof(long), quick);
+	qsort(arr, a, sizeof(long long), quick);
 	
     for (i = 0; i < a; i++){
 		if (arr[i] - i >= 0) {
@@ -74,14 +74,8 @@ int main(void)
 	        } 
 		}
     
-	printf("%d", total);
+	printf("%lld", total);
 	
     
     return 0;
 }
-
-
-
-
-
-
