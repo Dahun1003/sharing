@@ -7,13 +7,13 @@ int main() {
 	double arr[1000];
 
 	double max = 0, total = 0;
-
+	
 	for (i = 0; i < num1; i++) {
 		scanf("%lf", &arr[i]);
-		if (arr[i] > max) {
+		if (arr[i] > max)
 			max = arr[i];
-		}
 	}
+
 	for (j = 0; j < num1; j++) {
 		arr[j] = (arr[j] / max) * 100;
 		total += arr[j];
@@ -21,5 +21,5 @@ int main() {
 
 	printf("%lf", total/num1);
 	
-  return 0;
+	return 0;
 }
